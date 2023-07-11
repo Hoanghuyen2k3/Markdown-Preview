@@ -1,11 +1,13 @@
 {
   "name": "markdown-previewer",
+  "homepage":"https://hoanghuyen2k3.github.io/Markdown-Preview/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^5.0.0",
     "marked": "^5.1.1",
     "marked-mangle": "^1.1.0",
     "marked-react": "^1.4.0",
@@ -22,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
